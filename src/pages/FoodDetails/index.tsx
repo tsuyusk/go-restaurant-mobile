@@ -174,6 +174,7 @@ const FoodDetails: React.FC = () => {
     await api.post('orders', {
       ...food,
       productId,
+      full_price: cartTotal,
     });
 
     Alert.alert('Compra finalizada com sucesso!');
